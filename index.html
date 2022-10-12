@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <!-- <script src="script.js" defer></script>     -->
     <title>Sign Up Form</title>
 </head>
 <body>
@@ -19,14 +20,14 @@
             <div class="signup-element1">
                 <p>
                     This is not a real online service! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, commodi!
-
-                    Sign up now to get started.
-                    
-                    You know you want to.
+                    <br>
+                    Sign up <em>now</em> to get started.
+                    <br>
+                    You <em>know</em> you want to.
                 </p>
             </div>
             <div class="signup-element2">
-                <form action="" method="post">
+                <form action="" method="post" id="account-form">
                     <legend>Lets do it!</legend>
 
                     <div class="form-box">
@@ -34,34 +35,34 @@
                         <div class="section1">
                             <div class="form-input">
                                 <label for="name-box">FIRST NAME</label>
-                                <input type="text" id="name-box">
+                                <input type="text" name="name-box"id="name-box" required>
                             </div>
     
                             <div class="form-input">
                                 <label for="email-box">EMAIL</label>
-                                <input type="email" id="email-box">
+                                <input type="email" name="email-box" id="email-box"required>
                             </div>
                               
                             <div class="form-input">
                                 <label for="password-box">PASSWORD</label>
-                                <input type="password" id="password-box">
+                                <input type="password" name="password-box" id="password-box" class="password" required>
                             </div>
                         </div>
                         
                         <div class="section2">
                             <div class="form-input">
                                 <label for="lastname-box">LAST NAME</label>
-                                <input type="text" id="lastname-box">
+                                <input type="text" name="lastName-box" id="lastname-box"required>
                             </div>
                                
                             <div class="form-input">
                                 <label for="phone-box">PHONE NUMBER</label>
-                                <input type="text" id="phone-box">
+                                <input type="text" name="phone-box" id="phone-box" >
                             </div>
     
                             <div class="form-input">
                                 <label for="confirmPassword-box">CONFIRM PASSWORD</label>
-                                <input type="text" id="confirmPassword-box">
+                                <input type="text" name="confirmPassword-box" id="confirmPassword-box" class="password" required>
                             </div>
                         </div>
                      
@@ -70,9 +71,13 @@
                     
                 </form>
             </div>
-            <div class="signup-element3"></div>
+            <div class="signup-element3">
+                <button type="submit" form="account-form" id="submit-btn" href="">Create Account</button>
+                <div class="text">Already have an account? <a href="">Log in!</a></div>
+            </div>
         </div>
     </div>
-    
+    <script>
+    </script>
 </body>
 </html>

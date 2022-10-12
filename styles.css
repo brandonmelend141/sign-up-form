@@ -1,6 +1,8 @@
 body{
     margin: 0;
     padding: 0;
+    /* overflow-y: hidden; */
+    overflow: hidden;
 }
 *{
     box-sizing: border-box;
@@ -14,12 +16,12 @@ body{
 
 .background-container{
     background-image: url(./images/photo-1534214526114-0ea4d47b04f2.avif);
-    width: 600px;
+    width: 40vw;
     height: 100vh;
     background-position: 40% 20%;
 }
 .logo{
-    width: 600px;
+    width: 40%;
     height: 100px;
     background-color: rgba(0, 0, 0, 0.596);
     position: absolute;
@@ -41,28 +43,71 @@ body{
 
 .signup-container{
     display: grid;
-    width: calc(100vw - 600px);
+    width: calc(100vw - 40vw);
     grid-template-columns: 1;
     grid-template-rows: repeat(3,1fr);
-    background-color: black;
-    color: orange;
+    background-color:black;
+    color: rgba(65,176,228,255);
 }
 
-.signup-element2{
-    background-color: rgb(59, 59, 59);
+.signup-element1{
     padding: 20px;
+    position: relative;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.signup-element1 p{
+    position: absolute;
+    line-height: 2rem;
+    left: 20px;
+    /* font-style: italic; */
+    bottom: 0;
+}
+.signup-element2{
+    background-color: rgb(8, 8, 8);
+    padding: 20px;
+    box-shadow: 0 20px 15px -3px rgb(22,22,22);
     /* height: 350px; */
     
 }
+.signup-element3{
+    padding: 40px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.signup-element3 button{
+    height: 50px;
+    width: 300px;
+    border: 2px solid rgba(65,176,228,255);
+    border-radius: 10px;
+    color: rgba(65,176,228,255);
+    font-size: 2rem;
+    background-color: black;
+}
+.signup-element3 button:hover{
+    background-color: rgba(65,176,228,255);
+    color: black;
+}
+
+.text{
+    font-size: 20px;
+}
+.text a{
+    color: rgba(195,74,137,255);
+    text-decoration: none;
+}
 .form-box{
     display: flex;
-    margin-top: 40px;
+    margin-top: 60px;
     /* flex-flow: row wrap; */
     float: left;
+
     gap: 100px;
 }
 legend{
-    font-size: 28px;
+    font-size: 42px;
 }
 
 .form-input{
@@ -73,8 +118,17 @@ legend{
 .form-input input{
     width: 450px;
     height: 30px;
+    outline: none;
     border-radius: 3px;
-    border: none;
+    border: 1px solid rgb(73, 73, 73);
+    background-color: rgb(8, 8, 8);
+    color:rgba(65,176,228,255) ;
+    font-size: 20px;
+}
+.form-input input:focus{
+    border: 2px solid  rgba(65,176,228,255);
+    /* outline-color: */
+    
 }
 
 .section1{
